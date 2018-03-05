@@ -1,10 +1,18 @@
 <h1>Angular 5 Material Input Masks</h1>
 
 <mat-card>
+  <mat-card-title><h3>Force Upppercase</h3></mat-card-title>
+  <mat-form-field>
+    <input matInput appUppercase [(uppercase)]='customerInfo.firstName' type="text" placeholder="Enter Last Name">
+  </mat-form-field>
+</mat-card>
+
+<mat-card>
   <mat-card-title><h3>Money Input</h3></mat-card-title>
   <mat-card-actions>
     <mat-form-field>
-      <input matInput placeholder="Enter Funds (USD)">
+        <span matPrefix>$ $nbsp;</span>
+      <input matInput type="number" placeholder="Enter Funds (USD)">
     </mat-form-field>
   </mat-card-actions>
 </mat-card>

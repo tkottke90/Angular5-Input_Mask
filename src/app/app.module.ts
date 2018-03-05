@@ -6,12 +6,14 @@ import { MatButtonModule, MatCardModule, MatInputModule } from '@angular/materia
 
 import { AppComponent } from './app.component';
 import { CurrencyDirective } from './currency.directive';
+import { UppercaseDirective } from './uppercase.directive';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    CurrencyDirective
+    CurrencyDirective,
+    UppercaseDirective
   ],
   imports: [
     BrowserModule,
