@@ -3,7 +3,7 @@
 <mat-card>
   <mat-card-title><h3>Force Upppercase</h3></mat-card-title>
   <mat-form-field>
-    <input matInput appUppercase [(uppercase)]='customerInfo.firstName' type="text" placeholder="Enter Last Name">
+    <input matInput appUppercase type="text" placeholder="Enter Last Name">
   </mat-form-field>
 </mat-card>
 
@@ -12,7 +12,7 @@
   <mat-card-actions>
     <mat-form-field>
       <span matPrefix *ngIf="moneyInput.value" >$ &nbsp;</span>
-      <input matInput #moneyInput type="number" placeholder="Enter Funds (USD)">
+      <input matInput #moneyInput appCurrency type="number" placeholder="Enter Funds (USD)">
     </mat-form-field>
   </mat-card-actions>
 </mat-card>
