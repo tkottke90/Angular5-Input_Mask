@@ -11,8 +11,8 @@
   <mat-card-title><h3>Money Input</h3></mat-card-title>
   <mat-card-actions>
     <mat-form-field>
-        <span matPrefix>$ $nbsp;</span>
-      <input matInput type="number" placeholder="Enter Funds (USD)">
+      <span matPrefix *ngIf="moneyInput.value" >$ &nbsp;</span>
+      <input matInput #moneyInput type="number" placeholder="Enter Funds (USD)">
     </mat-form-field>
   </mat-card-actions>
 </mat-card>

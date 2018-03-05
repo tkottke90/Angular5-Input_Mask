@@ -5,8 +5,6 @@ import {Directive, Input, Output, EventEmitter, OnInit, HostListener, SimpleChan
 })
 export class UppercaseDirective implements OnInit {
 
-
-
   @Input() uppercase: string;
   @Output() uppercaseChange: EventEmitter<string> = new EventEmitter<string>();
 
@@ -19,7 +17,5 @@ export class UppercaseDirective implements OnInit {
   ngOnInit() {
     this.uppercase = this.uppercase || '';
   }
-
-  
 
 }
