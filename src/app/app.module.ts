@@ -5,11 +5,13 @@ import { NgModule } from '@angular/core';
 import { MatButtonModule, MatCardModule, MatInputModule } from '@angular/material';
 
 import { AppComponent } from './app.component';
+import { CurrencyDirective } from './currency.directive';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CurrencyDirective
   ],
   imports: [
     BrowserModule,
